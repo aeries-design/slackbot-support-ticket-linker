@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+//Dependencies
+var http = require('http');
+var fs = require('fs');
+var app = require('../app');
+
+const httpServer = http.createServer(app);
+
+httpServer.listen('8080');

@@ -1,0 +1,8 @@
+{
+    "routes": [
+      {
+        "route": "/rest",
+        "address": "http://localhost:3030"
+      }
+    ]
+  }

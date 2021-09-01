@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Aeries Sans';
+  src: url("../fonts/AeriesSansExtraBold.woff") format('woff2'),
+      url("../fonts/AeriesSansExtraBold.woff") format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeries Sans';
+  src: url("../fonts/AeriesSansMedium.woff") format('woff2'),
+      url("../fonts/AeriesSansMedium.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeries Sans';
+  src: url("../fonts/AeriesSansSemiBold.woff") format('woff2'),
+      url("../fonts/AeriesSansSemiBold.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeries Sans';
+  src: url("../fonts/AeriesSansLight.woff") format('woff2'),
+      url("../fonts/AeriesSansLight.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeries Sans';
+  src: url("../fonts/AeriesSansBold.woff") format('woff2'),
+      url("../fonts/AeriesSansBold.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeries Sans';
+  src: url("../fonts/AeriesSansThin.woff") format('woff2'),
+      url("../fonts/AeriesSansThin.woff") format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Nunito Sans'
+}

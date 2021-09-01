@@ -1,0 +1,101 @@
+<template lang="pug">
+main(class="px-3 md:px-0")
+  section
+    div.container
+      h2.text-title.font-semi-bold.font-aeries.py-6 Find (& tag) Aeries employees
+      p.mb-6 Need to look up the account of an Aeries employee or see if someone exists in a particular system? This screen catalogs members of our team across all the tools we use, so you can see who's using what. 
+      p.mb-6 You can also click users to build a list of @usertags you can copy and paste into that system, for example if you wanted to tag a large, specific number of people on Slack.
+      p.mb-6 Most importantly, it provides an API that accepts an aeries.com email address and responds with information about 3rd party accounts and aliases, so we can build custom integrations to connect our services together.
+      h2.text-title.font-semi-bold.font-aeries.py-6 Accounts by platform
+  section
+    div.container.flex.flex-wrap
+      a(href="/people/slack" class="w-full mb-4 md:w-1/4 block md:inline-block md:mr-8")
+        .max-w-sm.rounded.overflow-hidden.shadow-lg.bg-white
+          .px-6.py-4
+            div(class="w-12 mb-6")
+              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 2447.6 2452.5" viewBox="0 0 2447.6 2452.5"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m897.4 0c-135.3.1-244.8 109.9-244.7 245.2-.1 135.3 109.5 245.1 244.8 245.2h244.8v-245.1c.1-135.3-109.5-245.1-244.9-245.3.1 0 .1 0 0 0m0 654h-652.6c-135.3.1-244.9 109.9-244.8 245.2-.2 135.3 109.4 245.1 244.7 245.3h652.7c135.3-.1 244.9-109.9 244.8-245.2.1-135.4-109.5-245.2-244.8-245.3z" fill="#36c5f0"/><path d="m2447.6 899.2c.1-135.3-109.5-245.1-244.8-245.2-135.3.1-244.9 109.9-244.8 245.2v245.3h244.8c135.3-.1 244.9-109.9 244.8-245.3zm-652.7 0v-654c.1-135.2-109.4-245-244.7-245.2-135.3.1-244.9 109.9-244.8 245.2v654c-.2 135.3 109.4 245.1 244.7 245.3 135.3-.1 244.9-109.9 244.8-245.3z" fill="#2eb67d"/><path d="m1550.1 2452.5c135.3-.1 244.9-109.9 244.8-245.2.1-135.3-109.5-245.1-244.8-245.2h-244.8v245.2c-.1 135.2 109.5 245 244.8 245.2zm0-654.1h652.7c135.3-.1 244.9-109.9 244.8-245.2.2-135.3-109.4-245.1-244.7-245.3h-652.7c-135.3.1-244.9 109.9-244.8 245.2-.1 135.4 109.4 245.2 244.7 245.3z" fill="#ecb22e"/><path d="m0 1553.2c-.1 135.3 109.5 245.1 244.8 245.2 135.3-.1 244.9-109.9 244.8-245.2v-245.2h-244.8c-135.3.1-244.9 109.9-244.8 245.2zm652.7 0v654c-.2 135.3 109.4 245.1 244.7 245.3 135.3-.1 244.9-109.9 244.8-245.2v-653.9c.2-135.3-109.4-245.1-244.7-245.3-135.4 0-244.9 109.8-244.8 245.1 0 0 0 .1 0 0" fill="#e01e5a"/></g></svg>
+            .font-bold.text-title.mb-2 Slack
+            p.text-gray-700.text-base
+              | {{totalSlackUsers}} active users
+      a(href="/people/confluence" class="w-full mb-4 md:w-1/4 block md:inline-block md:mr-8")
+        .max-w-sm.rounded.overflow-hidden.shadow-lg.bg-white
+          .px-6.py-4
+            div(class="w-12 mb-6")
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" viewBox="0 0 256 246" version="1.1" preserveAspectRatio="xMidYMid"> <defs> <linearGradient x1="99.140087%" y1="112.708084%" x2="33.8589812%" y2="37.7549606%" id="linearGradient-1"> <stop stop-color="#0052CC" offset="18%"/> <stop stop-color="#2684FF" offset="100%"/> </linearGradient> <linearGradient x1="0.92569163%" y1="-12.5823074%" x2="66.1800713%" y2="62.3057471%" id="linearGradient-2"> <stop stop-color="#0052CC" offset="18%"/> <stop stop-color="#2684FF" offset="100%"/> </linearGradient> </defs> <g> <path d="M9.26054484,187.329971 C6.61939782,191.637072 3.65318655,196.634935 1.13393863,200.616972 C-1.12098385,204.42751 0.0895487945,209.341911 3.85635171,211.669157 L56.6792921,244.175582 C58.5334859,245.320393 60.7697695,245.67257 62.8860683,245.153045 C65.0023672,244.633521 66.8213536,243.285826 67.9346417,241.412536 C70.0475593,237.877462 72.7699724,233.285929 75.7361837,228.369333 C96.6621947,193.831256 117.710105,198.057091 155.661356,216.179423 L208.037333,241.087471 C210.020997,242.031639 212.302415,242.132457 214.361632,241.366949 C216.420848,240.601441 218.082405,239.034833 218.967618,237.024168 L244.119464,180.137925 C245.896483,176.075046 244.088336,171.3377 240.056161,169.492071 C229.003977,164.291043 207.021507,153.92962 187.233221,144.380857 C116.044151,109.802148 55.5415672,112.036965 9.26054484,187.329971 Z" fill="url(#linearGradient-1)"/> <path d="M246.11505,58.2319428 C248.756197,53.9248415 251.722408,48.9269787 254.241656,44.9449416 C256.496579,41.1344037 255.286046,36.2200025 251.519243,33.8927572 L198.696303,1.38633231 C196.82698,0.127283893 194.518741,-0.298915762 192.323058,0.209558312 C190.127374,0.718032386 188.241461,2.11550922 187.115889,4.06811236 C185.002971,7.60318607 182.280558,12.1947186 179.314347,17.1113153 C158.388336,51.6493918 137.340426,47.4235565 99.3891748,29.3012247 L47.1757299,4.5150757 C45.1920661,3.57090828 42.9106475,3.47008979 40.8514312,4.2355977 C38.7922149,5.00110562 37.1306578,6.56771434 36.2454445,8.57837881 L11.0935983,65.4646223 C9.31657942,69.5275012 11.1247267,74.2648471 15.1569014,76.1104765 C26.2090859,81.3115044 48.1915557,91.6729274 67.9798418,101.22169 C139.331444,135.759766 199.834028,133.443683 246.11505,58.2319428 Z" fill="url(#linearGradient-2)"/> </g> </svg>
+            .font-bold.text-title.mb-2 Confluence
+            p.text-gray-700.text-base
+              | {{totalConfluenceUsers}} active users
+      a(href="/people/jira" class="w-full mb-4 md:w-1/4 block md:inline-block md:mr-8")
+        .max-w-sm.rounded.overflow-hidden.shadow-lg.bg-white
+          .px-6.py-4
+            div(class="w-12 mb-6")
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve"><g id="_x31_84-jira"><g><g><g><path d="M473.387,243.152C407.892,177.837,321.192,90.509,256.415,26.001 C107.725,174.152,38.546,243.152,38.546,243.152c-7.099,7.098-7.099,18.599,0,25.784 c119.312,118.865,55.522,55.257,217.869,217.063c340.866-339.607,14.106-15.003,216.972-217.152 C480.575,261.751,480.575,250.25,473.387,243.152L473.387,243.152z" style="fill:#0052CC;"/></g></g><polygon points="256.415,324.013 188.135,256 256.415,187.988 324.697,256 " style="fill:#FFFFFF;"/></g></g><g id="Layer_1"/></svg>
+            .font-bold.text-title.mb-2 Jira
+            p.text-gray-700.text-base
+              | {{totalJiraUsers}} active users
+</template>
+
+<script>
+const axios = require('axios');
+
+module.exports = {
+data() {
+    return {
+        currentUser : "",
+        totalSlackUsers: 0,
+        totalConfluenceUsers: 0,
+        totalJiraUsers: 0
+    }
+  },
+methods : {
+getCookie(name) {
+  var name = name + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+},
+async mounted () {
+      //For passing to our function
+      var globalScope = this;
+
+      //Slack
+      axios
+      .get('/rest/users?platform=slack&is_bot[$ne]=true&deleted[$ne]=true&is_restricted[$ne]=true')
+      .then(function(response) {
+        globalScope.totalSlackUsers = response.data.total;
+      })
+
+      //Confluence
+      axios
+      .get('/rest/users?platform=confluence&is_bot[$ne]=true')
+      .then(function(response) {
+        globalScope.totalConfluenceUsers = response.data.total;
+      })
+      
+      //Slack
+      axios
+      .get('/rest/users?platform=jira&is_bot[$ne]=true')
+      .then(function(response) {
+        globalScope.totalJiraUsers = response.data.total;
+      })
+
+
+
+    var me = this.getCookie('me');
+    if (me) {
+        this.currentUser = me;
+    }
+},
+
+}
+</script>

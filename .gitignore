@@ -1,0 +1,17 @@
+*.log
+.cache
+.DS_Store
+src/.temp
+node_modules/
+backend/node_modules/
+external-tools/mysigmail/node_modules/
+backend/data/*.db
+public/sentinel/*
+public/sentinel-asset-procurement/*
+public/javascripts/bundle.js
+public/javascripts/bundle.js.*
+dist
+.env
+.env.*
+dev_tools/
+.now
